@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Home | Candybox Marketing</title>
+<title><?php echo wp_title()?></title>
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory')?>/css/style.css" type="text/css" />
 <script type="text/javascript" src="<?php bloginfo('stylesheet_directory')?>/js/jquery-1.4.2.min.js"></script>
 <script type="text/javascript" src="<?php bloginfo('stylesheet_directory')?>/js/jquery.tools.min.js"></script>
@@ -69,6 +69,9 @@ $(function(){
 <!--[if lte IE 7]>
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory')?>/css/ie.css" type="text/css" media="all" />
 <![endif]-->
+<?php
+wp_head();
+?>
 </head>
 
 <body>
