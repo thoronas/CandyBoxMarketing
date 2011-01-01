@@ -1,0 +1,42 @@
+@font-face {
+ font-family: 'LiberationSerifItalic';
+ src: url('fonts/liberationserif/liberationserif-italic-webfont.eot');
+ src: local('☺'), url('fonts/liberationserif/liberationserif-italic-webfont.woff') format('woff'), url('fonts/liberationserif/liberationserif-italic-webfont.ttf') format('truetype'), url('fonts/liberationserif/liberationserif-italic-webfont.svg#webfontwPkp6Scx') format('svg');
+ font-weight: normal;
+ font-style: normal;
+}
+ @font-face {
+ font-family: 'LiberationSerifBoldItalic';
+ src: url('fonts/liberationserif/liberationserif-bolditalic-webfont.eot');
+ src: local('☺'), url(fonts/liberationserif/'liberationserif-bolditalic-webfont.woff') format('woff'), url('fonts/liberationserif/liberationserif-bolditalic-webfont.ttf') format('truetype'), url('fonts/liberationserif/liberationserif-bolditalic-webfont.svg#webfontfWDBAR8T') format('svg');
+ font-weight: normal;
+ font-style: normal;
+}
+ @font-face {
+ font-family: 'LiberationSerifBold';
+ src: url('fonts/liberationserif/liberationserif-bold-webfont.eot');
+ src: local('☺'), url('fonts/liberationserif/liberationserif-bold-webfont.woff') format('woff'), url('fonts/liberationserif/liberationserif-bold-webfont.ttf') format('truetype'), url('fonts/liberationserif/liberationserif-bold-webfont.svg#webfontNwotXTp7') format('svg');
+ font-weight: normal;
+ font-style: normal;
+}
+ @font-face {
+ font-family: 'LiberationSerifRegular';
+ src: url('fonts/liberationserif/liberationserif-regular-webfont.eot');
+ src: local('☺'), url('fonts/liberationserif/liberationserif-regular-webfont.woff') format('woff'), url('fonts/liberationserif/liberationserif-regular-webfont.ttf') format('truetype'), url('fonts/liberationserif/liberationserif-regular-webfont.svg#webfontZqFJra7Z') format('svg');
+ font-weight: normal;
+ font-style: normal;
+}
+ @font-face {
+ font-family: 'FranchiseRegular';
+ src: url('fonts/franchise/franchise-bold-webfont.eot');
+ src: local('☺'), url('fonts/franchise/franchise-bold-webfont.woff') format('woff'), url('fonts/franchise/franchise-bold-webfont.ttf') format('truetype'), url('fonts/franchise/franchise-bold-webfont.svg#webfonte817W44o') format('svg');
+ font-weight: normal;
+ font-style: normal;
+}
+ @font-face {
+ font-family: 'ALittlePotRegular';
+ src: url('fonts/alittlepot/alittlepot-webfont.eot');
+ src: local('☺'), url('fonts/alittlepot/alittlepot-webfont.woff') format('woff'), url('fonts/alittlepot/alittlepot-webfont.ttf') format('truetype'), url('fonts/alittlepot/alittlepot-webfont.svg#webfontWjU5uwfb') format('svg');
+ font-weight: normal;
+ font-style: normal;
+}
