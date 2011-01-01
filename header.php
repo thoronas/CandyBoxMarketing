@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title><?php echo wp_title()?>ma</title>
+<title><?php echo wp_title()?> | Candybox Marketing</title>
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory')?>/css/style.css" type="text/css" />
 <script type="text/javascript" src="<?php bloginfo('stylesheet_directory')?>/js/jquery-1.4.2.min.js"></script>
 <script type="text/javascript" src="<?php bloginfo('stylesheet_directory')?>/js/jquery.tools.min.js"></script>
@@ -14,6 +14,8 @@
 <script type="text/javascript" src="<?php bloginfo('stylesheet_directory')?>/js/script.js"></script>
 <!--<script type="text/javascript" src="<?php bloginfo('stylesheet_directory')?>/js/styled-check.js"></script>-->
 <script type="text/javascript" src="<?php bloginfo('stylesheet_directory')?>/js/slider/jquery.innerfade.js"></script>
+<script type="text/javascript" src="<?php bloginfo('stylesheet_directory')?>/js/swfobject.js"></script>
+
  <script>
   $(document).ready(function(){
     $("#homeForm").validate();

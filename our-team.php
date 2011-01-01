@@ -204,6 +204,14 @@ get_header();
 </div>
 <!--END page-->
 
+<script type="text/javascript">
+var flashvars = {};
+var params = {};
+params["wmode"] = "transparent";
+var attributes = {};
+swfobject.embedSWF("http://www.youtube.com/v/iFec2ZSi6Nc?enablejsapi=1&amp;version=3&amp;border=0", "vid", "410", "250", "7", flashvars, params, attributes );
+
+</script>
 <?php
 get_footer();
 ?>
