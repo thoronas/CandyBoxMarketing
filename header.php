@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title><?php echo wp_title()?></title>
+<title><?php echo wp_title()?>ma</title>
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory')?>/css/style.css" type="text/css" />
 <script type="text/javascript" src="<?php bloginfo('stylesheet_directory')?>/js/jquery-1.4.2.min.js"></script>
 <script type="text/javascript" src="<?php bloginfo('stylesheet_directory')?>/js/jquery.tools.min.js"></script>
@@ -140,24 +140,24 @@ wp_head();
         </h1>
         <nav>
           <ul id="navigation" class="clearfix">
-            <li >
+            <li>
               <a href="<?php bloginfo('url')?>/">
               <img src="<?php bloginfo('stylesheet_directory')?>/img/nav/home.png" alt="Home" />
               <img src="<?php bloginfo('stylesheet_directory')?>/img/nav/home-hover.png" alt="Home" />
               </a>
             </li>
-            <li>
+            <li class="page-item <?php if (is_page('inbound marketing')) { echo "current";}?>">
               <a href="<?php bloginfo('url')?>/inbound-marketing" title="">
               <img src="<?php bloginfo('stylesheet_directory')?>/img/nav/imbound.png" alt="Inbound Marketing" />
               <img src="<?php bloginfo('stylesheet_directory')?>/img/nav/imbound-hover.png" alt="Inbound Marketing" /></a>
             </li>
-            <li class="current">
+            <li class="page-item <?php if (is_page('our team')) { echo "current";}?>">
               <a href="<?php bloginfo('url')?>/our-team" title="">
               <img src="<?php bloginfo('stylesheet_directory')?>/img/nav/about.png" alt="About" />
               <img src="<?php bloginfo('stylesheet_directory')?>/img/nav/about-hover.png" alt="About" />
               </a>
             </li>
-            <li >
+            <li class="page-item <?php if (is_page('blog')) { echo "current";}?>">
               <a href="<?php bloginfo('url')?>/blog" title="">
               <img src="<?php bloginfo('stylesheet_directory')?>/img/nav/blog.png" alt="Blog" />
               <img src="<?php bloginfo('stylesheet_directory')?>/img/nav/blog-hover.png" alt="Blog" />
