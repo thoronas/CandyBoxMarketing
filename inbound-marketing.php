@@ -57,7 +57,7 @@ get_header();
                   As a <em>Google Certified</em> company, we can help you get to the top of Google Search, both organically and through paid advertising. How do we do this? It starts with discovering what your customers search for and building a site that meets their needs. </p>
                 <p> Interested in finding out how you can reach your potential through Google? We'd love to show you how. </p>
                 <div class="btnRow">
-                  <a href="our-work.html" class="whiteBtn floatRight"><span>Find out how</span></a>
+                  <a href="<?php bloginfo('url')?>/our-work" class="whiteBtn floatRight"><span>Find out how</span></a>
                 </div>
               </div>
               <!--END gfInfoCont-->
@@ -76,7 +76,7 @@ get_header();
                 <p> Our team helps companies understand their current and prospective customers better. Through Facebook, we can push more qualified prospects to your company without wasting advertising dollars on others. </p>
                 <p> Check out some of our client case studies and how Facebook was used to generate masses of quality leads! </p>
                 <div class="btnRow">
-                  <a href="our-work.html" class="whiteBtn floatRight"><span>See our case studies</span></a>
+                  <a href="<?php bloginfo('url')?>/our-work" class="whiteBtn floatRight"><span>See our case studies</span></a>
                 </div>
               </div>
               <!--END gfInfoCont-->
@@ -122,7 +122,7 @@ get_header();
             <p> How do we help <br />
               our customers grow? </p>
             <div class="btnRow">
-              <a class="brownBtn" href="our-work.html"><span>See real examples</span></a>
+              <a class="brownBtn" href="<?php bloginfo('url')?>/our-work"><span>See real examples</span></a>
             </div>
           </div>
           <!--END inboundSec-->
