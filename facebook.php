@@ -6,7 +6,7 @@ Template Name: facebook
 
 <?php
 get_header();
-?>		
+?>
       <section id="content" class="clearfix">
 			<div class="wrapper">
         <div id="faceBookPage" class="clearfix">
