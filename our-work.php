@@ -119,75 +119,8 @@ get_header();
         <div class="apple-overlay" id="petrol">
           <div class="popup-form">
             <h5>Our <span>free</span> case study reports:</h5>
-            <form action="" id="ourWorks"  class="cmxform">
-              <fieldset>
-                <div class="check-row clearfix">
-                  <div class="check-col clearfix">
-                    <input type="checkbox" />
-                    <label>acres4life <span>(social media)</span></label>
-                  </div>
-                  <div class="check-col clearfix">
-                    <input type="checkbox" />
-                    <label>Marine Expert <span>(lead gen)</span></label>
-                  </div>
-                </div>
-                <div class="check-row clearfix">
-                  <div class="check-col clearfix">
-                    <input type="checkbox" />
-                    <label>Digital Lizard <span>(facebook)</span></label>
-                  </div>
-                  <div class="check-col clearfix">
-                    <input type="checkbox" />
-                    <label>Walk at Home <span>(blog)</span></label>
-                  </div>
-                </div>
-                <div class="check-row clearfix">
-                  <div class="check-col clearfix">
-                    <input type="checkbox" />
-                    <label>O'Neil Data <span>(design)</span></label>
-                  </div>
-                  <div class="check-col clearfix">
-                    <input type="checkbox" />
-                    <label>Advertising Week <span>(design)</span></label>
-                  </div>
-                </div>
-                <div class="check-row clearfix">
-                  <div class="check-col clearfix">
-                    <input type="checkbox" />
-                    <label>No Limit Kids <span>(facebook)</span></label>
-                  </div>
-                  <div class="check-col clearfix">
-                    <input type="checkbox" />
-                    <label>Stella &amp; Dot <span>(facebook)</span></label>
-                  </div>
-                </div>
-                <div class="col-inn-left">
-                  <div class="row-inn">
-                    <label for="cname">Name</label>
-                    <span class="popup-inp-left">
-                    <input id="cname" name="name" class="required" type="text" />
-                    </span>
-                  </div>
-                  <div class="row-inn">
-                    <label for="cphone">Phone <span>(optional)</span></label>
-                    <span class="popup-inp-left">
-                    <input id="cphone" name="phone" class="required" type="text" />
-                    </span>
-                  </div>
-                </div>
-                <div class="col-inn-right">
-                  <div class="row-inn">
-                    <label for="cemail">Email</label>
-                    <span class="popup-inp-right">
-                    <input id="cemail" name="email" class="required email" type="text" />
-                    </span>
-                  </div>
-                  <div class="row-inn">
-                    <input type="submit" class="popup-submit"  rel="#petrol_1" value="Send me the link" />
-                  </div>
-                </div>
-              </fieldset>
-            </form>
+   		    <?php gravity_form(4, false, false); ?>
+
           </div>
         </div>
         <div class="apple-overlay" id="petrol_1">

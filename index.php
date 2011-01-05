@@ -12,7 +12,7 @@ get_header();
               <div class="contNavBox cnBox-1">
                 <div class="contNavBoxHead">
                   <h5>FACEBOOK FOR BUSINESS?</h5>
-                  <a href="inbound-marketing.html">You bet! Find out how you generate qualified leads</a>
+                  <a href="<?php bloginfo('url')?>/inbound-marketing">You bet! Find out how you generate qualified leads</a>
                 </div>
                 <!--END contNavBoxHead-->
               </div>
@@ -24,7 +24,7 @@ get_header();
               <div class="contNavBox cnBox-2">
                 <div class="contNavBoxHead">
                   <h5>THINK YOUR SITE IS UGLY?</h5>
-                  <a href="web-design.html">We do too, and so do your customers. (let us help)</a>
+                  <a href="<?php bloginfo('url')?>/web-design">We do too, and so do your customers. (let us help)</a>
                 </div>
                 <!--END contNavBoxHead-->
               </div>
@@ -36,7 +36,7 @@ get_header();
               <div class="contNavBox cnBox-3">
                 <div class="contNavBoxHead">
                   <h5>HOW TO GET ON GOOGLE?</h5>
-                  <a href="inbound-marketing.html">We're <span>Google Certified</span>; customers will find you!</a>
+                  <a href="<?php bloginfo('url')?>/inbound-marketing">We're <span>Google Certified</span>; customers will find you!</a>
                 </div>
                 <!--END contNavBoxHead-->
               </div>
@@ -55,68 +55,7 @@ get_header();
                   <div class="nav-cont-popup-top"></div>
                   <div class="nav-cont-popup-mid">
                     <a href="#" class="popup-close"></a>
-                    <form action="" class="cmxform" id="homeForm">
-                      <fieldset>
-                        <div class="popup-check-row">
-                          <label>I'm interested in:</label>
-                        </div>
-                        <div class="popup-check-row">
-                          <div class="popup-check-col-left">
-                            <input type="radio" name="name1" class="styled" />
-                            <label>Facebook for business</label>
-                          </div>
-                          <div class="popup-check-col-right">
-                            <input type="radio" name="name1" class="styled" />
-                            <label>Social media marketing</label>
-                          </div>
-                        </div>
-                        <div class="popup-check-row">
-                          <div class="popup-check-col-left">
-                            <input type="radio" name="name1" class="styled" />
-                            <label>Online advertising</label>
-                          </div>
-                          <div class="popup-check-col-right">
-                            <input type="radio" name="name1" class="styled" />
-                            <label>Inbound marketing</label>
-                          </div>
-                        </div>
-                        <div class="popup-check-row">
-                          <div class="popup-check-col-left">
-                            <input type="radio" name="name1" class="styled" />
-                            <label>Google rankings</label>
-                          </div>
-                          <div class="popup-check-col-right">
-                            <input type="radio" name="name1" class="styled" />
-                            <label>Web design</label>
-                          </div>
-                        </div>
-                        <div class="popup-inp-row">
-                          <div class="popup-inp-col-left">
-                            <label for="cname">Name</label>
-                            <span class="inp-lit">
-                            <input id="cname" name="name" type="text" class="required name txt-field-pop" />
-                            </span>
-                          </div>
-                          <div class="popup-inp-col-right">
-                            <label for="cemail">Email</label>
-                            <span class="inp-big">
-                            <input id="cemail" name="email" type="text" class="required email txt-field-pop" />
-                            </span>
-                          </div>
-                        </div>
-                        <div class="popup-inp-row">
-                          <div class="popup-inp-col-left">
-                            <input type="submit" class="submit popup-cont-submit" value="SEND INFO" />
-                          </div>
-                          <div class="popup-inp-col-right">
-                            <label for="cphone">Phone</label>
-                            <span class="inp-lit">
-                            <input id="cphone" name="phone" type="text" class="required phone txt-field-pop" />
-                            </span>
-                          </div>
-                        </div>
-                      </fieldset>
-                    </form>
+					<?php gravity_form(1, true, false); ?>
                   </div>
                   <div class="nav-cont-popup-bot"></div>
                 </div>
@@ -191,19 +130,13 @@ get_header();
                   </li>
                 </ul>
             
-                <a href="our-work.html" class="slide-cont-btn">Find out how</a>
+                <a href="<?php bloginfo('url')?>/our-work" class="slide-cont-btn">Find out how</a>
               </div>
               <!-- home slider : end -->
               <div class="newsletter clearfix">
                 <h5>Our amazing newsletter</h5>
-                <form action="">
-                  <fieldset>
-                    <span class="email-adr">
-                    <input type="text" value="Sign up! Email address." />
-                    </span>
-                    <input type="submit" class="email-go" value="go" />
-                  </fieldset>
-                </form>
+					<?php gravity_form(2, false, false); ?>
+
                 <div class="news-article">
                   <div class="bird">
                     <img src="<?php bloginfo('stylesheet_directory')?>/img/cont/bird.png" alt="" />

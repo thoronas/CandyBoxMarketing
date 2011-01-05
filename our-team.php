@@ -124,7 +124,7 @@ get_header();
           
           <!--col2-->
           <div class="col2 team-col">
-            <a class="brownBtn" href="our-work.html"><span>See our handywork</span></a>
+            <a class="brownBtn" href="<?php bloginfo('url')?>/our-work"><span>See our handywork</span></a>
             <h2>OUR CLIENTS</h2>
             <div id="video-container">
 								

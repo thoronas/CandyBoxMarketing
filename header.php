@@ -12,9 +12,10 @@
 <script type="text/javascript" src="<?php bloginfo('stylesheet_directory')?>/js/jquery.tweet.js"></script>
 <script type="text/javascript" src="<?php bloginfo('stylesheet_directory')?>/js/main.js"></script>
 <script type="text/javascript" src="<?php bloginfo('stylesheet_directory')?>/js/script.js"></script>
-<!--<script type="text/javascript" src="<?php bloginfo('stylesheet_directory')?>/js/styled-check.js"></script>-->
+<script type="text/javascript" src="<?php bloginfo('stylesheet_directory')?>/js/styled-check.js"></script>
 <script type="text/javascript" src="<?php bloginfo('stylesheet_directory')?>/js/slider/jquery.innerfade.js"></script>
 <script type="text/javascript" src="<?php bloginfo('stylesheet_directory')?>/js/swfobject.js"></script>
+<script type="text/javascript" src="<?php bloginfo('stylesheet_directory')?>/js/styled-check.js"></script>
 
  <script>
   $(document).ready(function(){
@@ -87,34 +88,23 @@ wp_head();
 	        <nav>
 	          <ul id="navigation" class="clearfix">
 	            <li class="current">
-	              <a href="<?php bloginfo('url')?>/">
-	              <img src="<?php bloginfo('stylesheet_directory')?>/img/nav/home.png" alt="Home" />
-	              <img src="<?php bloginfo('stylesheet_directory')?>/img/nav/home-hover.png" alt="Home" />
-	              </a>
+	              <a href="<?php bloginfo('url')?>/" class="nav-home nav-home-active"></a>
 	            </li>
 	            <li class="toFlyOut">
-	              <a href="<?php bloginfo('url')?>/inbound-marketing" title="A Strategy focused on getting your prospective customers to find you, instead of you trying to find them to interrupt their day with noisy ads.">
-	              <img src="<?php bloginfo('stylesheet_directory')?>/img/nav/imbound.png" alt="Inbound Marketing" />
-	              <img src="<?php bloginfo('stylesheet_directory')?>/img/nav/imbound-hover.png" alt="Inbound Marketing" /></a>
+	              <a href="<?php bloginfo('url')?>/inbound-marketing" title="A Strategy focused on getting your prospective customers to find you, instead of you trying to find them to interrupt their day with noisy ads." class="nav-inbound"></a>
 	            </li>
 	            <li>
-	              <a href="<?php bloginfo('url')?>/our-team" title="ABOUT">
-	              <img src="<?php bloginfo('stylesheet_directory')?>/img/nav/about.png" alt="About" />
-	              <img src="<?php bloginfo('stylesheet_directory')?>/img/nav/about-hover.png" alt="About" />
-	              </a>
+	              <a href="<?php bloginfo('url')?>/our-team" title="ABOUT" class="nav-team"></a>
 	            </li>
 	            <li>
-	              <a href="<?php bloginfo('url')?>/blog" title="BLOG">
-	              <img src="<?php bloginfo('stylesheet_directory')?>/img/nav/blog.png" alt="Blog" />
-	              <img src="<?php bloginfo('stylesheet_directory')?>/img/nav/blog-hover.png" alt="Blog" />
-	              </a>
+	              <a href="<?php bloginfo('url')?>/blog" title="BLOG" class="nav-blog"></a>
 	            </li>
 	          </ul>
 	        </nav>
 	        <div class="socialTop">
 	          <a href="www.facebook.com/candyboxmarketing" class="faceBookTop" title="Become our Facebook fan"></a>
 	          <a href="http://twitter.com/candyboxmktg" target="_blank" class="twitterTop" title="Follow us on Twitter"></a>
-	          <a href="contact.html" class="mailTop" title="Mail Us"></a>
+	          <a href="<?php bloginfo('url')?>/contact" class="mailTop" title="Mail Us"></a>
 	        </div>
 	        <!--END socialTop-->
 	        <h2 class="head-txt1">
@@ -128,7 +118,7 @@ wp_head();
 	        <div class="man-blk"><img src="<?php bloginfo('stylesheet_directory')?>/img/elem/man.png" alt="" /></div>
 	        <!--END man-blk-->
 	        <div class="head-box">
-	          <a href="contact.html"><img src="<?php bloginfo('stylesheet_directory')?>/img/elem/head-box.png" alt="" /></a>
+	          <a href="<?php bloginfo('url')?>/contact"><img src="<?php bloginfo('stylesheet_directory')?>/img/elem/head-box.png" alt="" /></a>
 	        </div>
 	        <!--END head-box-->
 				</div>	
@@ -143,34 +133,23 @@ wp_head();
         <nav>
           <ul id="navigation" class="clearfix">
             <li>
-              <a href="<?php bloginfo('url')?>/">
-              <img src="<?php bloginfo('stylesheet_directory')?>/img/nav/home.png" alt="Home" />
-              <img src="<?php bloginfo('stylesheet_directory')?>/img/nav/home-hover.png" alt="Home" />
-              </a>
+              <a href="<?php bloginfo('url')?>/" class="nav-home"></a>
             </li>
             <li class="page-item <?php if (is_page('inbound marketing')) { echo "current";}?>">
-              <a href="<?php bloginfo('url')?>/inbound-marketing" title="">
-              <img src="<?php bloginfo('stylesheet_directory')?>/img/nav/imbound.png" alt="Inbound Marketing" />
-              <img src="<?php bloginfo('stylesheet_directory')?>/img/nav/imbound-hover.png" alt="Inbound Marketing" /></a>
+              <a href="<?php bloginfo('url')?>/inbound-marketing" title="" class="nav-inbound <?php if (is_page('inbound marketing')) { echo "nav-inbound-active";}?>" ></a>
             </li>
             <li class="page-item <?php if (is_page('our team')) { echo "current";}?>">
-              <a href="<?php bloginfo('url')?>/our-team" title="">
-              <img src="<?php bloginfo('stylesheet_directory')?>/img/nav/about.png" alt="About" />
-              <img src="<?php bloginfo('stylesheet_directory')?>/img/nav/about-hover.png" alt="About" />
-              </a>
+              <a href="<?php bloginfo('url')?>/our-team" title="" class="nav-team <?php if (is_page('our team')) { echo "nav-team-active";}?>"> </a>
             </li>
             <li class="page-item <?php if (is_page('blog')) { echo "current";}?>">
-              <a href="<?php bloginfo('url')?>/blog" title="">
-              <img src="<?php bloginfo('stylesheet_directory')?>/img/nav/blog.png" alt="Blog" />
-              <img src="<?php bloginfo('stylesheet_directory')?>/img/nav/blog-hover.png" alt="Blog" />
-              </a>
+              <a href="<?php bloginfo('url')?>/blog" title="" class="nav-blog <?php if (is_page('blog')) { echo "nav-blog-active";}?>"></a>
             </li>
           </ul>
         </nav>
         <div class="socialTop">
           <a href="www.facebook.com/candyboxmarketing" class="faceBookTop" title="Become our Facebook fan"></a>
           <a href="http://twitter.com/candyboxmktg" target="_blank" class="twitterTop" title="Follow us on Twitter"></a>
-          <a href="contact.html" class="mailTop" title="Mail Us"></a>
+          <a href="<?php bloginfo('url')?>/contact" class="mailTop" title="Mail Us"></a>
         </div>
         <!--END socialTop-->
 			</div>	

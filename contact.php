@@ -28,33 +28,9 @@ get_header();
           <div class="clearing"></div>
           <!-- end: clearing -->
           <p class="send-msg"><span>Or send us a message</span> - we'll be back to you in 24 hours.</p>
-          <form action="" class="cmxform contactForm" id="commentForm">
-            <fieldset>
-              <div class="name-col">
-                <label for="cname">Name</label>
-                <input  id="cname" name="name" type="text" value="" class="required cont-input" />
-              </div>
-              <!-- end: name-col-->
-              <div class="phone-col">
-                <label for="cphone">Phone</label>
-                <input id="cphone" name="phone" type="text" value="" class="required cont-input" />
-              </div>
-              <!-- end: phone-col -->
-              <div class="email-col">
-                <label for="cemail">Email</label>
-                <input id="cemail" name="email" type="text" value="" class="required email mail-input" />
-              </div>
-              <!-- end: email-col -->
-              <div class="clearing"></div>
-              <!-- end: clearing -->
-              <div class="c-textarea">
-                <label for="ccomment">Message</label>
-                <textarea id="ccomment" name="comment" class="required" cols=20 rows=5></textarea>
-                <input type="submit" class="send-btn submit" value=""/>
-              </div>
-              <!-- end: c-textarea -->
-            </fieldset>
-          </form>
+   		  <?php gravity_form(3, false, false); ?>
+
+          
         </div>
         <!-- end: cont-col1 -->
         

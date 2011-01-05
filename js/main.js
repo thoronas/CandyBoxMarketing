@@ -32,7 +32,7 @@ $(document).ready(function(){
 		if($(this).hasClass('open'))
 		{
 		}else{
-		$(this).stop().animate({height:'155px'},800);
+		$(this).stop().animate({height:'180px'},800);
 		$(this).css('z-index', '900');
 		var showElem = $(this).find('.nav-cont-popup');
 
