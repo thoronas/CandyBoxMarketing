@@ -13,10 +13,8 @@ get_header();
         <div id="cont-main-inn">
           <div class="wrap-top">
             <div class="form-row">
-              <span class="search-input">
-              <input type="text" />
-              </span>
-              <input type="submit" value="" class="search-submit" />
+              <?php get_search_form(); ?>
+              
             </div>
             <!-- form-row -->
             <h1>Our <span>thoughts</span></h1>
