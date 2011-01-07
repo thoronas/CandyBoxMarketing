@@ -55,7 +55,7 @@ get_header();
 
 				  <?php while (have_posts()) : the_post(); ?>
 					<li>
-					<a href="<?php bloginfo('url')?>/blog/<?php the_permalink(); ?>" title="<?php printf( __('Permalink to %s', 'your-theme'), the_title_attribute('echo=0') ); ?>" rel="bookmark"><?php the_title(); ?>"
+					<a href="<?php the_permalink(); ?>" title="<?php printf( __('Permalink to %s', 'your-theme'), the_title_attribute('echo=0') ); ?>" rel="bookmark"><?php the_title(); ?>"</a>
 					<span>by <?php the_author() ?></span>
 					</li>
 

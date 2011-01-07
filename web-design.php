@@ -24,31 +24,31 @@ get_header();
                 <em>Don't settle for templates</em> or an online brochure. Your customer is worth more than a well written about us page. With our help, here is what you can expect: </p>
               <ul>
                 <li>
-                  <a href="#" title="">Full project management to start and end efficiently</a>
+                  <a href="<?php bloginfo('url')?>/our-work" title="">Full project management to start and end efficiently</a>
                 </li>
                 <li>
-                  <a href="#" title="">A flow that targets how customers look for information</a>
+                  <a href="<?php bloginfo('url')?>/our-work" title="">A flow that targets how customers look for information</a>
                 </li>
                 <li>
-                  <a href="#" title=""><em>Lead funnels</em> that walk prospects through the site</a>
+                  <a href="<?php bloginfo('url')?>/our-work" title=""><em>Lead funnels</em> that walk prospects through the site</a>
                 </li>
                 <li>
-                  <a href="#" title="">A Web-focused writing style: short, concise statements</a>
+                  <a href="<?php bloginfo('url')?>/our-work" title="">A Web-focused writing style: short, concise statements</a>
                 </li>
                 <li>
-                  <a href="#" title="">Optimization for search engines (like Google) </a>
+                  <a href="<?php bloginfo('url')?>/our-work" title="">Optimization for search engines (like Google) </a>
                 </li>
                 <li>
-                  <a href="#" title=""><em>Social media</em> integrations</a>
+                  <a href="<?php bloginfo('url')?>/our-work" title=""><em>Social media</em> integrations</a>
                 </li>
                 <li>
-                  <a href="#" title="">A very sweet visual style</a>
+                  <a href="<?php bloginfo('url')?>/our-work" title="">A very sweet visual style</a>
                 </li>
               </ul>
               <div class="btnRow">
-                <a class="brownBtn" href="#"><span>Ask us to help</span></a>
+                <a class="brownBtn" href="<?php bloginfo('url')?>/contact"><span>Ask us to help</span></a>
                 <div class="blkLeftRow">
-                  <a class="blackLink" href="#">See our work</a>
+                  <a class="blackLink" href="<?php bloginfo('url')?>/our-work">See our work</a>
                 </div>
               </div>
             </div>

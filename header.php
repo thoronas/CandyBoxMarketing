@@ -147,7 +147,7 @@ wp_head();
           </ul>
         </nav>
         <div class="socialTop">
-          <a href="www.facebook.com/candyboxmarketing" class="faceBookTop" title="Become our Facebook fan"></a>
+          <a href="http://www.facebook.com/candyboxmarketing" class="faceBookTop" title="Become our Facebook fan"></a>
           <a href="http://twitter.com/candyboxmktg" target="_blank" class="twitterTop" title="Follow us on Twitter"></a>
           <a href="<?php bloginfo('url')?>/contact" class="mailTop" title="Mail Us"></a>
         </div>

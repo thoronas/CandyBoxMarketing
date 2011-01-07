@@ -15,13 +15,13 @@
               <h5>marketing</h5>
               <ul>
                 <li>
-                  <a href="<?php bloginfo('url')?>/facebook" title="google">google</a>
+                  <a href="<?php bloginfo('url')?>/our-work" title="google">google</a>
                 </li>
                 <li>
                   <a href="<?php bloginfo('url')?>/facebook" title="facebook">facebook</a>
                 </li>
                 <li>
-                  <a href="<?php bloginfo('url')?>/facebook" title="campaigning">campaigning</a>
+                  <a href="<?php bloginfo('url')?>/our-work" title="campaigning">campaigning</a>
                 </li>
               </ul>
             </div>
@@ -31,7 +31,7 @@
               <h5>about cbm</h5>
               <ul>
                 <li>
-                  <a href="<?php bloginfo('url')?>/our-work" title="our clients">our clients</a>
+                  <a href="<?php bloginfo('url')?>/our-team" title="our clients">our clients</a>
                 </li>
                 <li>
                   <a href="<?php bloginfo('url')?>/our-work" title="our work">our work</a>
@@ -62,15 +62,15 @@
             <div class="listsFoot lFBig">
               <h5>recent blog entries</h5>
               <ul>
-                <li>
-                  <a href="<?php bloginfo('url')?>/blog-article" title="are facebook pages taking over websites?">are facebook pages taking over websites?</a>
-                </li>
-                <li>
-                  <a href="<?php bloginfo('url')?>/blog-article" title="custom facebook pages for stella &amp; dot">custom facebook pages for stella &amp; dot</a>
-                </li>
-                <li>
-                  <a href="<?php bloginfo('url')?>/blog-article" title="new web presence for o'neil data systems">new web presence for o'neil data systems</a>
-                </li>
+              <?php query_posts('posts_per_page=3'); ?>
+
+				  <?php while (have_posts()) : the_post(); ?>
+					<li>
+					<a href="<?php bloginfo('url')?>/blog/<?php the_permalink(); ?>" title="<?php printf( __('Permalink to %s', 'your-theme'), the_title_attribute('echo=0') ); ?>" rel="bookmark"><?php the_title(); ?>"
+					</li>
+
+				  <?php endwhile;?>
+                
               </ul>
             </div>
             <!--END listsFoot-->

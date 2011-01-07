@@ -153,33 +153,19 @@ get_header();
           </div>
           <div class="content-bot clearfix">
             <h2>RECENT NEWS</h2>
-            <div class="company-box-1">
-              <div class="company-img">
-                <img src="<?php bloginfo('stylesheet_directory')?>/img/cont/comp-img-1.png" alt="" />
-              </div>
-              <div class="company-cont">
-                <h3><a href="#">Are Facebook pages taking over websites?</a></h3>
-                <p>Remember way, way, way back when the Internet started? OK, so maybe I used too many "ways" in that description. But, how many of you remember AOL? How many of you remember eWorld? Anyone?</p>
-              </div>
-            </div>
-            <div class="company-box-2">
-              <div class="company-img">
-                <img src="<?php bloginfo('stylesheet_directory')?>/img/cont/comp-img-2.png" alt="" />
-              </div>
-              <div class="company-cont">
-                <h3><a href="#">Custom Facebook pages for Stella &amp; Dot</a></h3>
-                <p>We just launched another interactive Facebook page for a customer. This time, the customer is Meghan Lee of Los Angeles, an independent stylist with Stella &amp; Dot.</p>
-              </div>
-            </div>
-            <div class="company-box-3">
-              <div class="company-img">
-                <img src="<?php bloginfo('stylesheet_directory')?>/img/cont/comp-img-3.png" alt="" />
-              </div>
-              <div class="company-cont">
-                <h3><a href="#">New Web presence for O'Neil Data Systems</a></h3>
-                <p>O'Neil Data Systems is a leader in data driven publishing and delivery systems. They offer the latest technology and systems in multi-channel document delivery and marketing communications.</p>
-              </div>
-            </div>
+            <?php
+			query_posts('posts_per_page=3');
+			if(have_posts()):while(have_posts()):the_post();
+				
+				require('loop-index.php');
+			endwhile;
+			else:
+				?>
+				<h2>No articles have been posted yet!</h2>
+				<?php
+			endif;
+			wp_reset_query();
+			?>
           </div>
           <footer class="bootBlk">
             <ul>
