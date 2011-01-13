@@ -41,8 +41,7 @@ get_header();
             
             <div class="article-tags">
               <span>Article subjects:</span>
-              <p>Analytics, Candybox News, Conversions, Facebook Advertising, Facebook Pages, Landing Pages, 
-                Paid Advertising, Pay Per Click, Search Engine Marketing</p>
+              <p><?php the_category(', '); ?></p>
             </div>
             <!-- article-tags -->
           </article>
@@ -55,16 +54,20 @@ get_header();
         <!-- end: blog-main -->
         <div class="blog-sidebar">
           <div class="blog-search">
-            <div class="form-row">
+            <!--
+<div class="form-row">
               <label>search the blog</label>
             </div>
+-->
             <!-- form-row -->
-            <div class="form-row clearfix">
+            <!--
+<div class="form-row clearfix">
               <span class="search-input">
               <input type="text" />
               </span>
               <input type="submit" value="" class="search-submit" />
             </div>
+-->
             <!-- form-row -->
           </div>
           <!-- blog-search -->

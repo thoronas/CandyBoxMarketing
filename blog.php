@@ -13,8 +13,10 @@ get_header();
         <div id="cont-main-inn">
           <div class="wrap-top">
             <div class="form-row">
-              <?php get_search_form(); ?>
-              
+             <!--
+ <?php get_search_form(); ?>
+             
+--> 
             </div>
             <!-- form-row -->
             <h1>Our <span>thoughts</span></h1>

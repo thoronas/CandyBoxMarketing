@@ -119,8 +119,7 @@ get_header();
         <div class="apple-overlay" id="petrol">
           <div class="popup-form">
             <h5>Our <span>free</span> case study reports:</h5>
-   		    <?php gravity_form(4, false, false); ?>
-
+   		    <?php gravity_form(4, false, false, false, null, true); ?>
           </div>
         </div>
         <div class="apple-overlay" id="petrol_1">

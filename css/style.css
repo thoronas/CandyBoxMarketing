@@ -1043,7 +1043,7 @@ header.headBlk {
 	font-family: "LiberationSerifRegular";
 }
 
-.textField, #input_3_1, #input_3_2, #input_3_3, #input_4_3, #input_4_4, #input_4_5  {
+.textField, #input_3_1, #input_3_2, #input_3_3,#input_4_2, #input_4_3, #input_4_4, #input_4_5  {
 	background-color: inherit;
 	height: 38px;
 	padding: 0px 5px;
@@ -1057,6 +1057,7 @@ header.headBlk {
 #gform_3 .gfield {
 	margin-right: 17px; 
 	margin-bottom: 15px; 
+
 }
 
 .w135, #input_3_1, #input_3_2 { width: 123px; }
@@ -1416,15 +1417,15 @@ header.index-header .wrapper { width: 940px; padding: 0px 25px; position: relati
 	height: 105px;
 }
 
-.cnBox-1 { left: 0px; }
+.cnBox-1 { left: 0px; padding-bottom: 10px;}
 
-.cnBox-2 { right: 0px; }
+.cnBox-2 { right: 0px; padding-bottom: 10px; }
 
-.cnBox-3 { left: 0px; }
+.cnBox-3 { left: 0px; padding-bottom: 10px; }
 
 .cnBox-4 {
 	right: -7px;
-	padding-right: 8px;
+	padding:0 8px 10px 0;
 }
 
 .contNavBoxHead {
@@ -1467,15 +1468,15 @@ header.index-header .wrapper { width: 940px; padding: 0px 25px; position: relati
 
 .cnBox-1 .contNavBoxHead { background: url(../img/elem/contNavBoxHead-1.png) no-repeat left top; ; }
 
-.cnBox-1 h5 { background: url("../img/icon/icon-1.png") no-repeat 12px 0px; }
+.cnBox-1 h5 { background: url("../img/icon/icon-1.png") no-repeat 12px 0px; margin-bottom: 10px}
 
 .cnBox-2 .contNavBoxHead { background: url(../img/elem/contNavBoxHead-2.png) no-repeat left top; ; }
 
-.cnBox-2 h5 { background: url(../img/icon/icon-2.png) no-repeat 0px 0px; }
+.cnBox-2 h5 { background: url(../img/icon/icon-2.png) no-repeat 0px 0px; margin-bottom: 10px}
 
 .cnBox-3 .contNavBoxHead { background: url(../img/elem/contNavBoxHead-1.png) no-repeat left top; ; }
 
-.cnBox-3 h5 { background: url(../img/icon/icon-3.png) no-repeat 0px 0px; }
+.cnBox-3 h5 { background: url(../img/icon/icon-3.png) no-repeat 0px 0px; margin-bottom: 10px }
 
 .cnBox-4 .contNavBoxHead {
 	background: url(../img/elem/contNavBoxHead-2.png) no-repeat 8px 8px;
@@ -1583,11 +1584,11 @@ header.index-header .wrapper { width: 940px; padding: 0px 25px; position: relati
 	font-family: "LiberationSerifRegular";
 }
 
-#field_1_2, .popup-inp-col-left { width: 159px; position: relative;}
+#field_1_2, .popup-inp-col-left { width: 146px; position: relative;}
 
 
 
-#field_1_3, #field_1_4, .popup-inp-col-right { width: 180px; position: relative;}
+#field_1_3, #field_1_4, .popup-inp-col-right { width: 175px; position: relative;}
 
 #field_1_3, #field_1_4{			
 	float: right;
@@ -2049,7 +2050,7 @@ POPUP
 	font-size: 18px;
 	color: #4d4d4d;
 	letter-spacing: 0.25px;
-	padding: 0 0 33px;
+	padding: 0 0 20px;
 }
 
 .apple-overlay h5 span {
@@ -2111,10 +2112,10 @@ POPUP
 	padding: 10px 5px;
 }
 
-#input_1_2,  #input_1_4{ width: 140px;}
+#input_1_2,  #input_1_4{ width: 136px;}
 
 
-#input_1_3 {width: 170px; }
+#input_1_3 {width: 165px; }
 
 .popup-inp-left input, .popup-inp-right input, .gfield_label {
 	color: #333333;
@@ -2644,10 +2645,11 @@ span.inp-big, span.inp-lit, span.search-input, .blog-form-name span, .blog-form-
 }
 
 .cont-col1 {
-	width: 515px;
+	width: 525px;
 	float: left;
 	padding:13px 0px 0px 0px;
 }
+
 
 .cont-col1 h1 {
 	font-size: 36px;
@@ -2865,6 +2867,7 @@ span.inp-big, span.inp-lit, span.search-input, .blog-form-name span, .blog-form-
 	border: 0;
 	cursor: pointer;
 	margin: 26px 0px 0px 2px;
+	float: left; 
 }
 
 .send-btn.active { background-position: bottom; }
@@ -3842,13 +3845,13 @@ ul.last-subject { width: 97px; }
 		GForm
 ====================================== */
 
-#field_4_6 {
+#field_4_6, #field_4_1 {
 	width: 365px;
 	margin-bottom: 10px; 
 	
 }
 
-#field_4_6 ul li {
+#field_4_6 ul li, #field_4_1 ul li {
 	float: left; 
 	width: 170px; 
 	color: #4D4D4D;
@@ -3859,7 +3862,7 @@ ul.last-subject { width: 97px; }
     
 }
 
-#input_4_6 input[type="checkbox"] {
+#input_4_6 input[type="checkbox"], #input_4_1 input[type="checkbox"] {
 	margin: 0 10px 0 0;
 }
 
@@ -3874,21 +3877,22 @@ ul.last-subject { width: 97px; }
 	line-height: 10px;
 	padding: 3px 27px 1px 12px;
 	position: relative;
-	bottom: -30px;
-	right: -30px;
+	bottom: -20px;
+	right: 90px;
 	width: 152px;
+	float: right; 
 }
 
 #field_4_5 {
 	margin-top: 10px; 
 }
 
-#input_4_4 {
+#input_4_3 {
 	width: 180px; 
 	background-color: white;
 }
 
-#input_4_3, #input_4_5 {
+#input_4_2, #input_4_4, #input_4_5 {
 	width: 130px; 
 	margin: 0 15px 0 0;
 	background-color: white;
@@ -3903,5 +3907,79 @@ ul.last-subject { width: 97px; }
 	display: inline;
 }
 
+.validation_error {
+  -webkit-border-radius: 5px; 
+  -moz-border-radius: 5px 5px 5px 5px;
+    background: none repeat scroll 0 0 #FBE3E4;
+    border: 2px solid #FBC2C4;
+    color: #8A1F11;
+    margin-bottom: 1em;
+    padding: 0.8em;
+    border-radius: 5px; 
+    font-weight: bold; 
+}
+
+.gfield_error {
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px;
+    background: none repeat scroll 0 0 #FBE3E4;
+    border: 1px solid #FBC2C4;
+    color: #8A1F11;
+    margin-bottom: 1em;
+    padding: 3px;
+     
+
+}
+
+#gform_3 .gfield_error {
+   
+   width: 135px; 
+
+}
 
 
+#field_3_3 {
+	width: 193px !important; 
+	margin-right: 0 !important; 
+}
+
+.validation_message{
+	margin: 5px 0 0 0;
+	font-size: 15px;  
+}
+
+#gform_wrapper_1 {
+	margin: -10px 0 0; 
+}
+
+#gforms_confirmation_message {
+	font-size: 18px; 
+	font-weight: bold; 
+	margin-top: 20px; 
+}
+
+#gform_4 .validation_error {
+	width: 330px; 
+	margin-top: -10px;
+}
+
+#gform_4 .gfield_error {
+   margin-bottom: 0; 
+   width: 140px; 
+
+}
+#gform_4 .validation_message {
+	display: none; 
+}
+#field_4_3.gfield_error {
+	width: 192px;
+	margin: 0 0 0 10px;  
+}
+
+.apple-overlay #gforms_confirmation_message {
+	width: 200px; 
+}
+
+.gfield#field_4_4 {
+	clear:both; 
+}

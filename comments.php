@@ -11,10 +11,14 @@
 	//form field array
 	array(
 	'author' => '<div class="blog-form-row clearfix"><div class="blog-form-name">' . '<label for="author">' . __( 'Name' ) . '
-	' . ( $req ? '<em class="required">*</em>' : '' ) .'
+	' . ( $req ? '<em class="required">*</em>' : '' ) .'</label> <span><input id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) . '" size="30"' . $aria_req . ' /></span></div>', 
 	
-	</label> <span><input id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) . '" size="30"' . $aria_req . ' /></span></div>', 
-	'website' => '<div class="blog-form-webs"><label>Website</label><span><input type="text" value="http://" /></span></div></div>') ),
+	'email'  => '<div class="blog-form-webs"><label for="email">' . __( 'Email' ) . '' . ( $req ? '<em class="required">*</em>' : '' ) .
+		'</label><span><input id="email" name="email" type="text" value="' . esc_attr(  $commenter['comment_author_email'] ) . '" size="30"' . $aria_req . ' /></span></div></div>',
+
+	 'website' => '<div class="blog-form-row clearfix"><div class="blog-form-webs comment-form-url"><label for="url">' . __( 'Website' ) . '</label><span><input id="url" name="url" type="text" value="' . esc_attr( $commenter['comment_author_url'] ) . '" size="30" /></span></div></div>'
+	
+	) ),
 	
 
 	//end of fields array

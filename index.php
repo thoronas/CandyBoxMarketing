@@ -45,7 +45,7 @@ get_header();
             <!--END contNavItem-->
             
             <div class="contNavItem">
-              <div class="contNavBox cnBox-4">
+              <div id="form" class="contNavBox cnBox-4">
                 <div class="contNavBoxHead">
                   <h5>DON'T KNOW HOW TO BEGIN?</h5>
                   <a href="#">Give us 10 minutes, we'll help you find your way</a>
@@ -55,7 +55,9 @@ get_header();
                   <div class="nav-cont-popup-top"></div>
                   <div class="nav-cont-popup-mid">
                     <a href="#" class="popup-close"></a>
-					<?php gravity_form(1, true, false); ?>
+                    
+					<?php gravity_form(1, true, false, false, null, true); ?>
+					
                   </div>
                   <div class="nav-cont-popup-bot"></div>
                 </div>
@@ -186,7 +188,26 @@ get_header();
 
 </div>
 <!--END page-->
+<?php
+function form_resize(){
+?>
+<script>
 
+$(document).ready(function($){
+
+	$('#gform_1').live('submit',function(e){
+		//e.preventDefault();
+		var height; 
+		
+		$('#form .nav-cont-popup-mid').css('height', '600px');
+		$('.cnBox-4').css('height', '710px');
+	});
+});
+</script>
+<?php
+}
+add_action('wp_footer','form_resize');
+?>
 <?php
 get_footer();
 ?>
